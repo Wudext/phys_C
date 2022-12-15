@@ -59,7 +59,7 @@ void sort(double* array, size_t size)//сортировка
 	double k;
 	for (int i = 0; i < size-1; i++)
 	{
-		for (int j = i; j < size-1; j++) {
+		for (int j = 0; j < size-1; j++) {
 			if (array[j] > array[j + 1])
 			{
 				k = at(array, j);

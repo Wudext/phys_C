@@ -52,6 +52,25 @@ int* read_f_int(const char* path) {
 	return a;
 }
 
+//float* read_f_float(const char* path) {
+//	size_t N = 10;
+//	int i = 0;
+//	float* a = nullptr;
+//	a = (float*)malloc(N * sizeof(float));
+//	FILE* file = open_f(path, "r");
+//	if (file != NULL) {
+//		while (!feof(file)) {
+//			N++;
+//			a = (float*)realloc(a, N * sizeof(float));
+//			fscanf(file, "%f", &a[i]);
+//			cout << a[i] << endl;
+//			i++;
+//		}
+//	}
+//
+//	return a;
+//}
+
 bool is_prime(int a) {
 	if (a == 2) {
 		return true;
