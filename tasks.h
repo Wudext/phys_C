@@ -1,3 +1,13 @@
+/*
+Я честно очень долго писал это говно, поэтому если вы спалитесь, будет грустно
+Возьмите вспомогательные функции (без main в названии) и пишите свои задачи с ними (чтобы не палится)
+Как юзать в своих проектах:
+1. Копируете tasks.h (лучше переименуйте)
+2. Удаляете от туда ненужные функции (чтобы не палится)
+3. Включаете в КАЖДЫЙ файл своего кода
+4. Profit
+*/
+
 #pragma once
 #pragma warning(disable : 4996)
 
@@ -34,6 +44,11 @@ void main_67();
 void main_62();
 
 // Вектор (двумерный динамический массив)
+/*
+С МАССИВАМИ, ОБЪЯВЛЕННЫМИ ПО ТИПУ double** array РАБОТАТЬ НЕ БУДЕТ
+ОБЪЯВЛЯЙТЕ МАССИВЫ В ВИДЕ double* array
+*/
+
 void push_back(double* array, size_t& size, size_t& capacity, const double& element); //Добавление элемента в конец массива
 void pop_back(double* array, size_t& size);
 void insert(double* array, size_t& size, size_t& capacity, size_t& ind, const double& element);
@@ -65,9 +80,6 @@ void main_810();
 void main_811();
 
 
-// ----- Девятый семинар -----
-void main_99();
-
 // ----- Полезные функции -----
 bool is_prime(int number); //Простое число или нет
 
@@ -77,4 +89,3 @@ int** input_m(int** a, int n); //Ввод двумерного динамического массива
 int write_f(char* s, FILE* output_file); //Добавление в конец файла
 FILE* open_f(const char* path, const char* type); //Открытие файла
 int* read_f_int(const char* path); //Считывание всех значений и вывод массива int
-float* read_f_float(const char* path); //Считывание всех значений и вывод массива float
