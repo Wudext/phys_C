@@ -39,4 +39,10 @@ void main() {
 	if (num == "8.11") {
 		main_811();
 	}
+	if (num == "9.8") {
+		main_98();
+	}
+	if (num == "9.9") {
+		main_99();
+	}
 }
